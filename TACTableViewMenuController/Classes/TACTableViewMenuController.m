@@ -79,10 +79,11 @@
         [buttons addObject:_scrollBottomButton];
     }
     
+    CGRect msBounds = [[UIScreen mainScreen] bounds];
     CGFloat mcWidth = 50.f;
     CGFloat mcHeight = 46.f * [buttons count];
-    UIEdgeInsets mcMargin = (_contentMode == TACTableViewMenuControllerContentModeLeft) ? UIEdgeInsetsMake(0.f, 0.f, 4.f, 0.f) : UIEdgeInsetsMake(0.f, (_tableView.frame.origin.x + _tableView.frame.size.width) - (mcWidth), 4.f, 0.f);
-    self.frame = CGRectMake(mcMargin.left, (_tableView.frame.origin.y + _tableView.frame.size.height) - (mcMargin.bottom + mcHeight), mcWidth, mcHeight);
+    UIEdgeInsets mcMargin = (_contentMode == TACTableViewMenuControllerContentModeLeft) ? UIEdgeInsetsMake(0.f, 0.f, 4.f, 0.f) : UIEdgeInsetsMake(0.f, msBounds.size.width - mcWidth, 4.f, 0.f);
+    self.frame = CGRectMake(mcMargin.left, msBounds.size.height - (mcMargin.bottom + mcHeight), mcWidth, mcHeight);
 }
 
 - (instancetype)initWithTableView:(UITableView *)tableView contentMode:(TACTableViewMenuControllerContentMode)contentMode top:(BOOL)top up:(BOOL)up more:(BOOL)more down:(BOOL)down bottom:(BOOL)bottom {
