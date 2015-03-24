@@ -26,15 +26,21 @@
 
 #pragma mark <UITableViewDataSource>
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 10;
+    return 11;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 20;
+    return 3;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    NSInteger section = indexPath.section;
+    // NSInteger row = indexPath.row;
+    
     TACTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:[TACTableViewCell reuseIdentifier] forIndexPath:indexPath];
+    cell.textLabel.text = [@(section) stringValue];
+    cell.backgroundColor = [UIColor colorWithRed:1.000 green:0.100*section blue:0.875 alpha:1.000];
+    
     return cell;
 }
 
