@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  TACTableViewCell.h
 //  TACTableViewMenuControllerExample
 //
 //  Created by masato_arai on 2015/03/24.
@@ -8,11 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@class TACTableView;
+@interface TACTableViewCell : UITableViewCell
 
-@interface ViewController : UIViewController
-
-@property (nonatomic, weak) IBOutlet TACTableView *tableView;
++ (UINib *)nib;
++ (NSString *)reuseIdentifier;
 
 @end
-

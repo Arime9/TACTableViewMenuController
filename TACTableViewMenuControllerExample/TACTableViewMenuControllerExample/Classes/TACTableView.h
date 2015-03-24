@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  TACTableView.h
 //  TACTableViewMenuControllerExample
 //
 //  Created by masato_arai on 2015/03/24.
@@ -8,11 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@class TACTableView;
-
-@interface ViewController : UIViewController
-
-@property (nonatomic, weak) IBOutlet TACTableView *tableView;
+@interface TACTableView : UITableView <UITableViewDataSource, UITableViewDelegate>
 
 @end
-
