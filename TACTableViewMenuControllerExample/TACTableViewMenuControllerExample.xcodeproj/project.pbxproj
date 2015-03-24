@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		9172FC091AC141BC002E5375 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9172FC061AC141BC002E5375 /* AppDelegate.m */; };
 		9172FC0A1AC141BC002E5375 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9172FC081AC141BC002E5375 /* ViewController.m */; };
+		9172FC191AC14305002E5375 /* mc_bottom@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9172FC131AC14305002E5375 /* mc_bottom@2x.png */; };
+		9172FC1A1AC14305002E5375 /* mc_down@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9172FC141AC14305002E5375 /* mc_down@2x.png */; };
+		9172FC1B1AC14305002E5375 /* mc_list@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9172FC151AC14305002E5375 /* mc_list@2x.png */; };
+		9172FC1C1AC14305002E5375 /* mc_top@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9172FC161AC14305002E5375 /* mc_top@2x.png */; };
+		9172FC1D1AC14305002E5375 /* mc_up@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9172FC171AC14305002E5375 /* mc_up@2x.png */; };
+		9172FC201AC1435B002E5375 /* TACTableViewMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9172FC1F1AC1435B002E5375 /* TACTableViewMenuController.m */; };
 		91E2AE051AC14037009430E2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 91E2AE041AC14037009430E2 /* main.m */; };
 		91E2AE0E1AC14037009430E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91E2AE0C1AC14037009430E2 /* Main.storyboard */; };
 		91E2AE101AC14037009430E2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91E2AE0F1AC14037009430E2 /* Images.xcassets */; };
@@ -31,6 +37,13 @@
 		9172FC061AC141BC002E5375 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Classes/AppDelegate.m; sourceTree = "<group>"; };
 		9172FC071AC141BC002E5375 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = Classes/ViewController.h; sourceTree = "<group>"; };
 		9172FC081AC141BC002E5375 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = Classes/ViewController.m; sourceTree = "<group>"; };
+		9172FC131AC14305002E5375 /* mc_bottom@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mc_bottom@2x.png"; sourceTree = "<group>"; };
+		9172FC141AC14305002E5375 /* mc_down@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mc_down@2x.png"; sourceTree = "<group>"; };
+		9172FC151AC14305002E5375 /* mc_list@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mc_list@2x.png"; sourceTree = "<group>"; };
+		9172FC161AC14305002E5375 /* mc_top@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mc_top@2x.png"; sourceTree = "<group>"; };
+		9172FC171AC14305002E5375 /* mc_up@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mc_up@2x.png"; sourceTree = "<group>"; };
+		9172FC1E1AC1435B002E5375 /* TACTableViewMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TACTableViewMenuController.h; sourceTree = "<group>"; };
+		9172FC1F1AC1435B002E5375 /* TACTableViewMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TACTableViewMenuController.m; sourceTree = "<group>"; };
 		91E2ADFF1AC14037009430E2 /* TACTableViewMenuControllerExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TACTableViewMenuControllerExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91E2AE031AC14037009430E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		91E2AE041AC14037009430E2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -60,11 +73,60 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9172FC0C1AC142D9002E5375 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				9172FC0D1AC14305002E5375 /* TACTableViewMenuController */,
+			);
+			name = Library;
+			path = TACTableViewMenuControllerExample;
+			sourceTree = "<group>";
+		};
+		9172FC0D1AC14305002E5375 /* TACTableViewMenuController */ = {
+			isa = PBXGroup;
+			children = (
+				9172FC0E1AC14305002E5375 /* Classes */,
+				9172FC111AC14305002E5375 /* Resource */,
+			);
+			name = TACTableViewMenuController;
+			path = ../../TACTableViewMenuController;
+			sourceTree = "<group>";
+		};
+		9172FC0E1AC14305002E5375 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				9172FC1E1AC1435B002E5375 /* TACTableViewMenuController.h */,
+				9172FC1F1AC1435B002E5375 /* TACTableViewMenuController.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		9172FC111AC14305002E5375 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				9172FC121AC14305002E5375 /* Images */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		9172FC121AC14305002E5375 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				9172FC131AC14305002E5375 /* mc_bottom@2x.png */,
+				9172FC141AC14305002E5375 /* mc_down@2x.png */,
+				9172FC151AC14305002E5375 /* mc_list@2x.png */,
+				9172FC161AC14305002E5375 /* mc_top@2x.png */,
+				9172FC171AC14305002E5375 /* mc_up@2x.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
 		91E2ADF61AC14037009430E2 = {
 			isa = PBXGroup;
 			children = (
 				91E2AE011AC14037009430E2 /* TACTableViewMenuControllerExample */,
 				91E2AE1B1AC14037009430E2 /* TACTableViewMenuControllerExampleTests */,
+				9172FC0C1AC142D9002E5375 /* Library */,
 				91E2AE001AC14037009430E2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -199,9 +261,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9172FC1B1AC14305002E5375 /* mc_list@2x.png in Resources */,
 				91E2AE0E1AC14037009430E2 /* Main.storyboard in Resources */,
+				9172FC191AC14305002E5375 /* mc_bottom@2x.png in Resources */,
+				9172FC1C1AC14305002E5375 /* mc_top@2x.png in Resources */,
 				91E2AE131AC14037009430E2 /* LaunchScreen.xib in Resources */,
+				9172FC1D1AC14305002E5375 /* mc_up@2x.png in Resources */,
 				91E2AE101AC14037009430E2 /* Images.xcassets in Resources */,
+				9172FC1A1AC14305002E5375 /* mc_down@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,6 +288,7 @@
 			files = (
 				9172FC0A1AC141BC002E5375 /* ViewController.m in Sources */,
 				9172FC091AC141BC002E5375 /* AppDelegate.m in Sources */,
+				9172FC201AC1435B002E5375 /* TACTableViewMenuController.m in Sources */,
 				91E2AE051AC14037009430E2 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
