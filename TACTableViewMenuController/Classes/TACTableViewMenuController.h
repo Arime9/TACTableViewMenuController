@@ -8,16 +8,33 @@
 
 #import <UIKit/UIKit.h>
 
+typedef NS_ENUM(NSInteger, TACTableViewMenuControllerContentMode) {
+    TACTableViewMenuControllerContentModeLeft,
+    TACTableViewMenuControllerContentModeRight
+};
+
 @interface TACTableViewMenuController : UIView
 
-@property UIButton *scrollTopButton;
-@property UIButton *scrollBottomButton;
+@property (nonatomic, strong) UIButton *scrollTopButton;
+@property (nonatomic, strong) UIButton *scrollBottomButton;
+@property (nonatomic, strong) UIButton *scrollUpButton;
+@property (nonatomic, strong) UIButton *scrollDownButton;
+@property (nonatomic, strong) UIButton *showMoreButton;
 
-- (instancetype)initWithTableView:(UITableView *)tableView viewController:(UIViewController *)viewController;
+- (instancetype)initWithTableView:(UITableView *)tableView contentMode:(TACTableViewMenuControllerContentMode)contentMode top:(BOOL)top up:(BOOL)up more:(BOOL)more down:(BOOL)down bottom:(BOOL)bottom;
+- (void)showInView:(UIView *)view;
+- (void)removeFromSuperview;
 
-#pragma mark - UITableViewScroll Methodss
+#pragma mark
+#pragma mark UITableViewScroll Methods
 - (void)scrollToTopRow;
-- (void)scrollToRowAtIndexPath:(NSIndexPath *)indexPath atScrollPosition:(UITableViewScrollPosition)scrollPosition animated:(BOOL)animated;
 - (void)scrollToBottomRow;
+- (void)scrollToUpSection;
+- (void)scrollToDownSection;
+- (void)scrollToRowAtIndexPath:(NSIndexPath *)indexPath atScrollPosition:(UITableViewScrollPosition)scrollPosition animated:(BOOL)animated;
+
+#pragma mark
+#pragma mark showMore's Methods
+- (void)showMore:(id)sender;
 
 @end
