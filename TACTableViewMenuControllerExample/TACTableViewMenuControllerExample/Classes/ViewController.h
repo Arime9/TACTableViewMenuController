@@ -7,12 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TACTableViewMenuController.h"
 
 @class TACTableView;
 
 @interface ViewController : UIViewController
 
 @property (nonatomic, weak) IBOutlet TACTableView *tableView;
+@property (nonatomic, strong) TACTableViewMenuController *tableViewMenuController;
 
 @end
-

@@ -7,21 +7,18 @@
 //
 
 #import "ViewController.h"
-#import "TACTableViewMenuController.h"
 
 @interface ViewController ()
 
 @end
 
-@implementation ViewController {
-    TACTableViewMenuController *_tableViewMenuController;
-}
+@implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    _tableViewMenuController = [[TACTableViewMenuController alloc] initWithTableView:(UITableView *)_tableView contentMode:TACTableViewMenuControllerContentModeRight top:YES up:YES more:YES down:YES bottom:YES];
-    [_tableViewMenuController showInView:self.view];
+    self.tableViewMenuController = [[TACTableViewMenuController alloc] initWithTableView:(UITableView *)_tableView contentMode:TACTableViewMenuControllerContentModeRight top:YES up:YES more:YES down:YES bottom:YES];
+    [self.tableViewMenuController showInView:self.view];
 }
 
 - (void)viewWillAppear:(BOOL)animated {

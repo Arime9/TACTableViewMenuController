@@ -39,7 +39,6 @@
     
     TACTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:[TACTableViewCell reuseIdentifier] forIndexPath:indexPath];
     cell.textLabel.text = [@(section) stringValue];
-    cell.backgroundColor = [UIColor colorWithRed:1.000 green:0.100*section blue:0.875 alpha:1.000];
     
     return cell;
 }
