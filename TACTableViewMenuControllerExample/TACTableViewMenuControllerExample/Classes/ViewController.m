@@ -17,7 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.tableViewMenuController = [[TACTableViewMenuController alloc] initWithTableView:(UITableView *)_tableView contentMode:TACTableViewMenuControllerContentModeRight top:YES up:YES more:YES down:YES bottom:YES];
+    self.tableViewMenuController = [[TACTableViewMenuController alloc] initWithTableView:(UITableView *)self.tableView contentMode:TACTableViewMenuControllerContentModeRight top:YES up:YES more:YES down:YES bottom:YES];
     [self.tableViewMenuController showInView:self.view];
 }
 
