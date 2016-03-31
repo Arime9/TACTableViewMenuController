@@ -1,4 +1,5 @@
 # TACTableViewMenuController
+![Screen Shot](https://github.com/Tea-and-Coffee/TACTableViewMenuController/wiki/images/ScreenShot_iPhone5s_iOS8.1_01.png)
 
 # Installation
 Add the following files to your project.
@@ -20,6 +21,3 @@ Add the following files to your project.
 
 # License
 TACTableViewMenuController is released under the MIT license. See LICENSE for details.
-
----
-![Screen Shot](https://github.com/Tea-and-Coffee/TACTableViewMenuController/wiki/images/ScreenShot_iPhone5s_iOS8.1_01.png)
